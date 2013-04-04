@@ -1,0 +1,24 @@
+The programs is writhen in 3 hex chars XYY
+X is Command
+YY is Argument
+Allmost all arguments are used as an adress to save or load from
+
+V1 and V0 are Registers
+
+Commands:
+0 - Load Arg to V0 (Load Memorey at argument at to V0)
+1 - V1 = Arg (set V0 to to argument)
+2 - Flip V0 <---> V1
+3 - Save V0 to arg
+4 - Add v1 + v0 to Arg
+5 - Sub v0-v1 to Arg
+6 - Mul v0*v1 to Arg
+7 - Div v0/v1 to Arg
+8 - Compare V0 V1 to Arg
+9 - Rotate  v0 < to Arg by v1
+A - if V0 = Arg goto V1 0000 (go to pos (V1*256)-1)
+B - Random to Arg
+C - V0 AND V1 to Arg
+D - V0 OR  V1 to Arg
+E - V0 XOR V1 to Arg
+F - -V0 to Arg
